@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    background: url(../media/space.jpg);
+    background-size: cover;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.pagetitle{
+    font-family: 'Silkscreen', sans-serif;
+    color: white;
+}
+.links a{
+    text-decoration: none;
+    font-family: 'Silkscreen', sans-serif;
+    margin: 5px;
+    color: white;
+}
+nav{
+    display: flex;
+    padding: 1vw;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.559);
+    position: relative;
+    z-index: 3;
+}
+section{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+.bannerheader{
+    position: relative;
+    font-family: 'Silkscreen', sans-serif;
+    text-align: center;
+}
+#bannertitle{
+    margin-top: 7em;
+    color: white;
+    text-shadow: black 2px 2px;
+    font-size: xx-large;
+}
+#galaxy{
+    background: url(../media/galaxy.gif);
+    height: 300px;
+    width: 300px;
+    margin-top: -20vh;
+    margin-left: 60vw;
+    background-size: cover;
+    animation: galaxymove 10s infinite linear;
+    z-index: 1;
+}
+@keyframes galaxymove{
+    0%  {
+        transform:rotate(-90deg) scale(0.5) translate(-1000px, 200px);
+    }
+    100%{
+        transform:rotate(180deg) scale(1.5) translate(100px, -1500px);
+}
+}
+#star{
+    background: url(../media/star.gif);
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    animation: starmove 10s infinite;
+    z-index: 1;
+}
+@keyframes starmove{
+    0%  {transform: translate(100px,-1000px) rotate(-90deg);
+    }
+    100%{transform:  translate(100px,1000px) rotate(90deg);
+    }
+}
+#blackhole{
+    background: url(../media/blackhole.gif);
+    height: 400px;
+    width: 400px;
+    margin-bottom: -10vh;
+    background-size: cover;
+    animation: blackholemove 8s infinite;
+    z-index: 1;
+}
+@keyframes blackholemove{
+    0%  {transform: translate(-1000px, -800px);
+    }
+    100%{transform: translate(2000px, -100px);
+    }
+}
+#blackhole{
+    background: url(../media/blackhole.gif);
+    height: 400px;
+    width: 400px;
+    margin-bottom: -10vh;
+    background-size: cover;
+    animation: blackholemove 7s infinite;
+    z-index: 1;
+}
+@keyframes blackholemove{
+    0%  {transform: translate(-1000px, -800px);
+    }
+    100%{transform: translate(2000px, -100px);
+    }
+}
+#terranwet{
+    background: url(../media/terranwet.gif);
+    height: 300px;
+    width: 300px;
+    margin-bottom: -10vh;
+    background-size: cover;
+    animation: terranmove 6s infinite;
+    z-index: 1;
+}
+@keyframes terranmove{
+    0%  {transform: translate(1700px, -500px);
+    }
+    100%{transform: translate(-2000px, -800px);
+    }
+}
